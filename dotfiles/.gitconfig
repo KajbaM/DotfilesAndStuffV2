@@ -1,7 +1,7 @@
 [user]
-	email = marko.sagadin42@gmail.com
-	name = MarkoSagadin
-	mail = marko.sagadin42@gmail.com
+	email = matjaz@irnas.eu
+	name = KajbaM
+	mail = matjaz@irnas.eu
 [credential]
 	helper = store
 [alias]
@@ -14,7 +14,7 @@
     dif = --no-pager diff
 [core]
 	autocrlf = false
-	editor = nvim
+	editor = code
     pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
 	ui = true

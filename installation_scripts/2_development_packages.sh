@@ -6,11 +6,6 @@ check_programs_path
 
 # Common
 
-# Install tmux plugin manager and install all plugins, this file should kept
-# out of git.
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-bash ~/.tmux/plugins/tpm/scripts/install_plugins.sh
-
 # Not related to development, but it makes life easier when learning new commands
 pip install tldr
 
