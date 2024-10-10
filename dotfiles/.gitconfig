@@ -4,6 +4,8 @@
 	mail = matjaz@irnas.eu
 [credential]
 	helper = store
+	helper = 
+	helper = /usr/local/bin/git-credential-manager
 [alias]
     plog = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
     plog2 = "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -14,7 +16,7 @@
     dif = --no-pager diff
 [core]
 	autocrlf = false
-	editor = code
+	editor = code --wait
     pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
 	ui = true
@@ -38,3 +40,5 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[credential "https://dev.azure.com"]
+	useHttpPath = true

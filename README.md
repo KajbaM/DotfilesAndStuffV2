@@ -3,7 +3,7 @@
 ## Intro
 
 This repository contains two categories of files:
-- Various dotfiles with my personal configuration for vim, neovim, tmux, alacritty, zsh and others.
+- Various dotfiles with my personal configuration for vim, neovim, zsh and others.
 - Several installation scripts that are suitable for Ubuntu and Manjaro Linux distributions.
 Scripts are meant to make development machine bring up process easier.
 Scripts are separated in several different files, offering programmer several different layers of installed packages.

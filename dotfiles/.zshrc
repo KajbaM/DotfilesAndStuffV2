@@ -52,6 +52,7 @@ export PATH=$PATH:$HOME/miniconda3/bin
 export PATH=$PATH:$HOME/.local/share/nvim/lsp_servers/clangd/clangd/bin/
 
 export PRETTIERD_DEFAULT_CONFIG="~/.prettierrc"
+export GCM_CREDENTIAL_STORE=gpg
 
 ### Various shell functions
 # Fixes the issue where pressing delete key would print tilda character
@@ -116,14 +117,14 @@ export FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/skobec/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/$USERNAME/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/skobec/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/skobec/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/$USERNAME/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/$USERNAME/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/skobec/miniconda3/bin:$PATH"
+        export PATH="/home/$USERNAME/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -148,3 +149,5 @@ _gt_yargs_completions()
 }
 compdef _gt_yargs_completions gt
 ###-end-gt-completions-###
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
