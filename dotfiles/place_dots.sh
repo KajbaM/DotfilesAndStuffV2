@@ -31,7 +31,5 @@ mkdir -p ~/.config
 
 # Create symlink for a file/folder on a right in the folder on the left
 linkDotfile /home/$USER .config/alacritty
-linkDotfile /home/$USER .ssh
 linkDotfile /home/$USER .gitconfig
-#linkDotfile /home/$USER .tmux.conf
 linkDotfile /home/$USER .zshrc
